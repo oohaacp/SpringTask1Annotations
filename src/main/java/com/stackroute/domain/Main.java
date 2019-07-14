@@ -9,6 +9,5 @@ public class Main {
         ApplicationContext context=new AnnotationConfigApplicationContext(ConfigurableBean.class);
         Movie movie1=context.getBean("movie",Movie.class);
         movie1.display();
-
     }
 }
