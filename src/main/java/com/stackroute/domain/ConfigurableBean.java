@@ -17,10 +17,15 @@ public class ConfigurableBean
     {
         return new Movie();
     }
-    @Bean(name="beanlifecycle",initMethod = "customInit",destroyMethod = "customDestroy")
+    @Bean(initMethod = "customInit",destroyMethod = "customDestroy")
     public BeanLifeCycleDemoBean setBeanlifeCycleobject()
     {
         return new BeanLifeCycleDemoBean();
+    }
+    @Bean
+    public BeanPostProcessorDemoBean setBeanPostProcessorDemoBean()
+    {
+        return new BeanPostProcessorDemoBean();
     }
 
 }
