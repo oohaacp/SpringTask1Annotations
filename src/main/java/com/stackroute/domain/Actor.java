@@ -3,7 +3,7 @@ package com.stackroute.domain;
 import org.springframework.beans.factory.annotation.Value;
 
 public class Actor {
-    @Value("Suresh")
+    @Value("Suresh")// inject values
     private String name;
     @Value("Male")
     private String gender;
