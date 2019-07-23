@@ -2,7 +2,8 @@ package com.stackroute.domain;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 @Configuration
-public class ConfigurableBean {
+public class ConfigurableBean 
+{
     @Bean
     public Movie movieBean()
     {
